@@ -4,15 +4,20 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "author": "Winston Zulu",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.1",
     "cheerio": "^1.0.0-rc.5",
     "got": "^10.4.0",
     "jsdom": "^16.2.2",
+    "json2csv": "^5.0.6",
+    "jsonfile": "^6.1.0",
+    "node-schedule": "^2.0.0",
     "puppeteer": "^8.0.0",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "sequence-js": "0.0.3"
   }
 }

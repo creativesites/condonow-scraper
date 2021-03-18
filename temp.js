@@ -5,7 +5,7 @@ const scraperObject = {
     async scraper(browser){
         let page = await browser.newPage();
         console.log(`Navigating to ${this.url}...`);
-        await page.goto(this.url,  {waitUntil: 'load', timeout: 0});
+        await page.goto(this.url,  {timeout: 0});
         const cc = '#searchresultTab1  table.socialTable tbody tr td.Info div.mapProjTitle div.listviewTitleInfo table tbody tr td div.projName div.projectTitle a.projects'
         //await page.waitFor(20000);
         let arrMainLinks = await page.$$('#searchresultTab1  table.socialTable tbody tr td.Info div.mapProjTitle div.listviewTitleInfo table tbody tr td div.projName div.projectTitle a.projects');   //get the main links
